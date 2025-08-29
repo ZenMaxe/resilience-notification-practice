@@ -1,0 +1,13 @@
+﻿services:
+  notification-service:
+    container_name: resilience-notification
+    build:
+      context: .
+      dockerfile: resilience-notification-practice/Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    volumes:
+      - ./Logs:/app/Logs
+    restart: unless-stopped

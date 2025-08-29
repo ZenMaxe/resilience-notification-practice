@@ -1,0 +1,12 @@
+@resilience_notification_practice_HostAddress = http://localhost:5116
+
+POST {{resilience_notification_practice_HostAddress}}/api/notifications/
+Content-Type: application/json
+
+{
+    "receiver": "hossein@example.com",
+    "message": "Hello world!",
+    "methods": [ 0, 1 ],
+    "fallbacks": [ 0 ]
+}
+###
