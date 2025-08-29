@@ -482,3 +482,7 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+
+!resilience-notification-practice/Infrastructure/Log/
+!resilience-notification-practice/Infrastructure/Log/*.cs
