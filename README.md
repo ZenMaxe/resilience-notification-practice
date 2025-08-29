@@ -55,8 +55,8 @@ The goal is to simulate how notification systems (e.g., Email, SMS, Push) can re
     {
         "receiver": "hossein@example.com"
         "message": "Hello world!",
-        "methods": [ "Email", "Sms" ],
-        "fallbacks": [ "Push" ]
+        "methods": [ 0, 1 ],
+        "fallbacks": [ 2 ]
     }
 ```
 3. Check for Logs
