@@ -53,7 +53,7 @@ The goal is to simulate how notification systems (e.g., Email, SMS, Push) can re
  ```json
      POST http://localhost:{port}/api/notification
     {
-        "receiver": "hossein@example.com"
+        "receiver": "hossein@example.com",
         "message": "Hello world!",
         "methods": [ 0, 1 ],
         "fallbacks": [ 2 ]
